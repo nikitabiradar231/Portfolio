@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio website</title>
+  <link rel="stylesheet" href="style.css">    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />      <!--icons link(ex-fb)-->
+  </head>
+ <body>
+  <div id="header">
+    <div class="container">    
+      <nav>
+        <img>
+          <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>          
+          <li><a href="#about">About</a></li>          
+          <li><a href="#portfolio">Skills</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">    <!--for text-->
+        <h1>Hello, I'm <br>Nikita Biradar <br>From Pune</h1> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- --------about------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">     <!-- 1st col for image-->
+        <img src="about.jpg">
+        </div><br>
+        <div class="about-col-2">     <!--2nd col for text-->
+           <h1 class="sub-tittle">About Me</h1><br>     <!--title-->
+           <p> Hi,I'm Nikita,a first-year Blockchain Technology student at Pune University. Currently,I'm learning Java & JavaScript and working on small projects to build my skills.<br>I enjoy participating in coding challenges and am exploring front-end development with HTML and CSS. My goal is to become a Web Developer and contribute to opensource projects.<br>Outside of coding,I love gaming,reading and photography.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- -----skill------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-tittle">Skills</h1>
+      <div class="skill-list">
+        <div class="skill">
+          <img src="images...png">     <!-- html image-->
+          <div class="layer">     <!--information over the image-->
+            <h2>HTML</h2>
+            <p>HTML (Hypertext Markup Language) is the standard language used to create and structure web pages. It defines the structure of a webpage by using a series of elements or tags that tell the browser how to display the content.
+            </p>
+          </div>
+        </div>  
+          <div class="skill">
+            <img src="sql2.png">
+            <div class="layer">
+              <h2>SQL</h2>
+              <p>SQL (Structured Query Language) is used to manage and manipulate relational databases. It allows users to create, select, update, and delete data</p>
+            </div>
+          </div>  
+            <div class="skill">
+              <img src="powerbi5.png">
+              <div class="layer">
+                <h2>Power Bi</h2>
+               <p>Power BI is a powerful business intelligence (BI) tool by Microsoft used for data visualization, reporting, and analytics. It allows users to connect to various data sources, transform data, and create interactive dashboards and reports.
+               </p>                
+              </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+<!------contact--------->
+ <div id="Contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+          <h1 class="sub-tittle">Contact Me</h1>
+          <p>nikitabiradar300@gmail.com</p>
+          <br><br>
+          <div class="icons">    <!--we add icons  in <i> tag like <i class="fb">  and in <a href>tag we can add account  link-->
+            <a href="https://www.linkedin.com/in/nikita-biradar-89b204323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/account"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/NikitaBira42284"><i class="fa-brands fa-twitter"></i></a>
+           </div>
+     </div>
+    <div class="contact-right">
+       <form>     <!--form tag for create a for-->
+        <input type="text"name="Name" placeholder="Your Name" required>
+        <input type="email" name="email"placeholder="Your Email" required>
+        <textarea name="message" row="5" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn2">submit</button>
+       </form>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>
