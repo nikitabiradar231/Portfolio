@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    background-color: theme('colors.background');
+    color: theme('colors.primary');
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: theme('colors.background');
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: theme('colors.surfaceHover');
+    border-radius: 3px;
+  }
+
+  ::selection {
+    background: theme('colors.accent');
+    color: #fff;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface border border-white/5 rounded-xl;
+  }
+
+  .card-hover {
+    @apply card transition-all duration-300 hover:bg-surfaceHover hover:border-accent/30 hover:shadow-[0_0_20px_rgba(129,140,248,0.1)];
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-2.5 rounded-lg font-medium text-white transition-all duration-300 bg-gradient-to-r from-indigo-500 to-purple-500 hover:shadow-lg hover:shadow-indigo-500/25 hover:scale-[1.02] border border-white/10;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center justify-center px-6 py-2.5 rounded-lg font-medium text-white transition-colors duration-200 bg-accent/90 hover:bg-accent;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-2.5 rounded-lg font-medium text-secondary transition-colors duration-200 bg-transparent hover:text-accent hover:border-accent/50 hover:bg-accent/5;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-4 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white to-accent/80;
+  }
+
+  .section-subtitle {
+    @apply text-secondary text-lg mb-12 max-w-2xl mx-auto font-light;
+  }
+
+  .nav-link {
+    @apply text-secondary hover:text-primary transition-colors duration-200 text-sm font-medium px-3 py-2 rounded-md;
+  }
+
+  .nav-link.active {
+    @apply text-accent bg-accent/10;
+  }
+
+  .skill-tag {
+    @apply px-3 py-1.5 rounded-md text-xs font-medium text-secondary bg-surface border border-white/5 transition-all duration-300 hover:border-accent/50 hover:text-accent hover:bg-accent/5 hover:scale-105;
+  }
+}
